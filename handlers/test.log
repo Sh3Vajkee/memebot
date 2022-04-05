@@ -1,0 +1,133 @@
+2022-03-29 12:50:42,662 - INFO - aiogram.dispatcher.dispatcher - Start polling.
+2022-03-29 12:53:55,591 - WARNING - aiogram.dispatcher.dispatcher - Polling is stopped.
+2022-03-29 12:53:55,595 - ERROR - root - Bot stopped!
+2022-03-29 12:53:55,642 - INFO - aiogram.dispatcher.dispatcher - Stop polling...
+2022-03-29 12:53:55,646 - ERROR - asyncio - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x7f5edf41a940>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 910, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/sslproto.py", line 685, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 916, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 711, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 723, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 719, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 508, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2022-03-29 12:57:43,209 - INFO - aiogram.dispatcher.dispatcher - Start polling.
+2022-03-29 13:03:32,868 - WARNING - aiogram.dispatcher.dispatcher - Polling is stopped.
+2022-03-29 13:03:32,874 - ERROR - root - Bot stopped!
+2022-03-29 13:03:32,912 - INFO - aiogram.dispatcher.dispatcher - Stop polling...
+2022-03-29 13:03:32,913 - ERROR - asyncio - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x7f07f8ae6b50>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 910, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/sslproto.py", line 685, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 916, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 711, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 723, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 719, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 508, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2022-03-29 13:10:08,488 - INFO - aiogram.dispatcher.dispatcher - Start polling.
+2022-03-29 13:44:26,155 - WARNING - aiogram.dispatcher.dispatcher - Polling is stopped.
+2022-03-29 13:44:26,160 - ERROR - root - Bot stopped!
+2022-03-29 13:44:26,208 - INFO - aiogram.dispatcher.dispatcher - Stop polling...
+2022-03-29 13:44:26,212 - ERROR - asyncio - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x7fc7cee03970>
+transport: <_SelectorSocketTransport closing fd=7>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 910, in write
+    n = self._sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/sslproto.py", line 685, in _process_write_backlog
+    self._transport.write(chunk)
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 916, in write
+    self._fatal_error(exc, 'Fatal write error on socket transport')
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 711, in _fatal_error
+    self._force_close(exc)
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 723, in _force_close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 719, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 508, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2022-03-29 13:44:29,704 - INFO - aiogram.dispatcher.dispatcher - Start polling.
+2022-03-30 07:31:23,671 - ERROR - aiogram.dispatcher.dispatcher - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/client.py", line 559, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/client_reqrep.py", line 913, in start
+    self._continue = None
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/helpers.py", line 721, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+2022-04-04 17:37:01,150 - ERROR - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-27687' coro=<Dispatcher._process_polling_updates() done, defined at /usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py:407> exception=InterfaceError("(sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: connection is closed")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 709, in _start_transaction
+    self._transaction = self._connection.transaction(
+  File "/usr/local/lib/python3.8/dist-packages/asyncpg/connection.py", line 275, in transaction
+    self._check_open()
+  File "/usr/local/lib/python3.8/dist-packages/asyncpg/connection.py", line 1400, in _check_open
+    raise exceptions.InterfaceError('connection is closed')
+asyncpg.exceptions._base.InterfaceError: connection is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/base.py", line 1808, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 479, in execute
+    self._adapt_connection.await_(
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/util/_concurrency_py3k.py", line 76, in await_only
+    return current.driver.switch(awaitable)
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/util/_concurrency_py3k.py", line 129, in greenlet_spawn
+    value = await result
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 408, in _prepare_and_execute
+    await adapt_connection._start_transaction()
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 716, in _start_transaction
+    self._handle_exception(error)
+  File "/usr/loca
